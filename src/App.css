@@ -1,0 +1,117 @@
+/* src/App.css */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme:  dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+ 
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+}
+.board{
+ text-align: center;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-right: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.board {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+}
+
+.board-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart-button {
+  
+  margin: 20px auto ;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+.restart-button:hover{
+  scale: .98;
+  border: 1px solid #535bf2;
+}
+.grid-square{
+  width: 35px;
+  height: 35px;
+  font-size: 8px;
+  outline: none !important;
+}
+
+.played-square,.winner-square{
+  box-sizing: border-box;
+  border: 1px solid #535bf2;
+  color:#535bf2 ;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
