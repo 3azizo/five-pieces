@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import './App.css';
-// import Sidebar from './components/Sidebar/Sidebar';
 import Board from './Board3x3';
 import EasyBoard from './EasyBoard';
 import Board1vs1 from './Board1vs1';
@@ -12,7 +11,7 @@ import Grid_15 from './dev/Grid15';
 function App() {
   const[level,setLevel]=useState("");
   const handleChange = (event) => {
-    setLevel(event.target.value); // Update the selected value when the user makes a selection
+    setLevel(event.target.value); 
   };
 
 
@@ -21,7 +20,6 @@ function App() {
     <h1>five pieces</h1>
     <span>select level</span>
       <select value={level} onChange={handleChange}>
-      {/* Options */}
       <option selected > -- select an option -- </option>
       <option value="3x3">3x3</option>
       <option value="1vs1">1 vs 1</option>
